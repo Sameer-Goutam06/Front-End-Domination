@@ -1,0 +1,67 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size: 1vw;
+}
+html,body
+{
+    width:100%;
+    height:100%;
+}
+#line-height
+{
+    line-height: 1;/*making it overlapped for a bit*/
+    line-height:1.2;
+    /* making no overlaps */
+    /* u can handle distance between lines using line-height */
+}
+/* Text-align */
+    #left
+    {
+        text-align: left;
+    }
+    #right
+    {
+        text-align:right;
+    }
+    #center
+    {
+        text-align: center;
+    }
+
+/* Padding and margin */
+#box
+{
+    width:20vw;
+    height:20vw;
+    background-color: red;
+    /* top right bottom left */
+    padding:5rem 7rem 3rem 7rem;
+    
+}
+#child1
+{
+    width: 4rem;
+    height:4rem;
+    background-color: green;
+    margin-bottom:2vw;
+}
+#child2
+{
+    width:4rem;
+    height:4rem;
+    background-color: yellow;
+}
+/* there is no change when units are changed from rem to vw  */
+
+/* Border */
+#border
+{
+    width:20rem;
+    height: 20rem;
+    background-color: skyblue;
+    border: 0.4rem solid black;
+    border-radius: 1rem;
+}

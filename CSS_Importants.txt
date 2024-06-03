@@ -1,0 +1,22 @@
+***** Boiler Plate *****: 
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body
+{
+    width:100%;
+    height:100%;
+}
+
+***** Grid properties *****:
+
+align-items(flex and grid)
+justify-items(grid)
+jistify-content(flex)
+justify-self(for child of flexbox or grid)
+align-self(for child of flexbox or grid)
+grid-row: start / end (to control an elements position)
+grid-column: start / end (to control an elements position)
