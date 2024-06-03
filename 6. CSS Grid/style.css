@@ -94,13 +94,13 @@ html,body
 /* END */
 .right
 {
-    padding: 30px;
+    padding:1vw;
 }
 video
 {
-    margin-top:15px;
-    height:650px;
-    width:600px;
+    margin-top:1vw;
+    height:45vw;
+    width:47vw;
     object-fit: cover;
 }
 /* END */
@@ -123,4 +123,31 @@ video
     text-decoration: none;
     color: white;
     font-weight: 500;
+}
+/* END */
+
+/* Making it responsive */
+@media (max-width:1000px) 
+{
+    .main
+    {
+        width:100%;
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+    .left
+    {
+        grid-row:1/2;
+        display:grid;
+        height:100vh;
+        width:100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 60% 15%;
+    }
+    .right{
+        height:100vh;
+        width:100%;
+        grid-row:2/3;
+        padding:2vw;
+    }
 }
