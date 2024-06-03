@@ -7,7 +7,7 @@
 html,body
 {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 .main
 {
@@ -99,8 +99,8 @@ html,body
 video
 {
     margin-top:1vw;
-    height:45vw;
-    width:47vw;
+    height:37rem;
+    width:35rem;
     object-fit: cover;
 }
 /* END */
