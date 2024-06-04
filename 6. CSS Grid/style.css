@@ -212,4 +212,9 @@ video
         justify-self: center;
         align-self: center;
     }
+    #arrow
+    {
+        height: 5vh;
+        width:5vh;
+    }
 }
