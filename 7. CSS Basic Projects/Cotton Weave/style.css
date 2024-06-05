@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding:2vh;
+  padding-top:10vh;
+}
+.left {
+  height: 100%;
+  width: 40%;
+  padding-top: 3vw;
+  padding: 4vw;
+}
+.right {
+  height: 100%;
+  width: 40%;
+  padding-top: 4vh;
+  padding: 4vw;
+}
+
+.headline {
+  margin-bottom: 25vh;
+}
+
+.headline h1 {
+  font-size: 6vw;
+  font-weight: 500;
+  line-height: 0.97;
+}
+.colors 
+{
+  width: 10vw;
+  height: 2.5vw;
+  margin-bottom: 10vh;
+  border: 1px solid black;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.colors div
+{
+  display: flex;
+  align-items: center;
+}
+.colors p
+{
+  font-weight: 500;
+}
+.c1 
+{
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: bisque;
+  border-radius: 50%;
+  margin-right: 0.2vw;
+}
+.c2 
+{
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: purple;
+  border-radius: 50%;
+  margin-right: 0.2vw;
+}
+.subtitle h4
+{
+  margin-bottom: 2vh;
+}
+.subtitle p
+{
+  font-size: 0.9vw;
+}
+.right-top
+{
+  display: flex;
+  justify-content: space-between;
+}
+.right img
+{
+  height: 100%;
+  width: 90%;
+  margin-left:3vw;
+}
+.right .add
+{
+  position: absolute;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  background-color:rgb(39, 35, 35);
+  color:white;
+  top:40%;
+  right:5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-left
+{
+  margin-right:5vw;
+  rotate:-90deg;
+  transform-origin: 0 0;
+}
