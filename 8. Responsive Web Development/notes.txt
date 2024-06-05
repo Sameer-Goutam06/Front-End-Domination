@@ -8,6 +8,7 @@ px-pixels
 
 flex-properties:
 flex-direction:row or column
-flex-wrap:wrap or no-wrap
+flex-wrap:wrap or no-wrap // doesnt let the flex property to reduce the space alloted to items
+flex-shrink:0 or above //does the same thing as flex-wrap but flex-wrap is applied to parent and this is applied to the item itself
 justify-content:space-between,space-around,flex-start,flex-end,center
 align-items:center,flex-start,flex-end,baseline,stretch
