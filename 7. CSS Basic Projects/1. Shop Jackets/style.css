@@ -13,8 +13,8 @@ html,body
 }
 .main
 {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-color: rgb(221, 212, 212);
 }
 .nav
@@ -24,22 +24,26 @@ html,body
     display:flex;
     align-items:center;
     justify-content:flex-end;
-    gap:2vw;
+    gap:2vmax;
+}
+.nav h4
+{
+    font-size: 1.3vmax;
 }
 #bag
 {
     background-color: rgb(46, 12, 46);
-    height: 3vw;
-    width: 3vw;
+    height: 3.5vmax;
+    width: 3.5vmax;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-right: 2vw;
+    margin-right: 2vmax;
 }
 #bag i
 {
-    font-size: 1.7vw;
+    font-size: 1.8vmax;
     color: white;
 }
 /* navbar completed */
@@ -52,7 +56,7 @@ html,body
     padding-top: 2vw;
     padding-bottom: 2vw;
     line-height: 1.5;
-    font-size: 1.7vw;
+    font-size: 1.5vmax;
 }
 .headline h1
 {
@@ -65,21 +69,25 @@ html,body
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding:2vmax;
 }
 .subtitle
 {
-    height: inherit;
+    height: 100%;
     width: 50%;
-    padding: 0 6vw;
+    font-size: 1.2vmax;
+    padding: 2vmax 4vmax;
 }
 .options
 {
+    height: 100%;
+    padding-top: 1.5vmax;
     padding-right: 10vw;
-    font-size: 1.4vw;
-    
+    font-size: 1.1vmax;
 }
 .options div
 {
+    width: 140%;
     padding:0.5vw 0;
     border-top:2px solid black;
     display: flex;
@@ -87,7 +95,7 @@ html,body
 }
 .options div i
 {
-    font-size: 1.2;
+    font-size: 1.2vmax;
     opacity: 0;
     margin-top:0.2vw;
 }
@@ -118,5 +126,70 @@ html,body
 }
 @media screen and (max-height:1000px) and (max-width:800px) 
 {
-
+    .main
+    {
+        height: 100%;
+        width: 100%;
+    }
+    /* navigation bar needs to be adjusted */
+    .nav
+    {
+        height: 10%;
+    }
+    .nav h4
+    {
+        font-size: 1.5vmax;
+    }
+    /* elements in nav bar are already adjusted */
+    /* headline needs to be adjusted perfectly */
+    .headline
+    {
+        height: 25%;
+        padding-right: 10vmax;
+        padding:2vmax 3vmax;
+        font-size: 2.17vmax;
+    }
+    /* headline adjusted */
+    .middle
+    {
+        height: 40%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+    .subtitle
+    {
+        height: 35%;
+        width: 100%;
+        font-size: 2.3vmax;
+        padding:0 3vmax;
+    }
+    .options
+    {
+        height: 65%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4vmax 4vmax;
+    }
+    .options div
+    {
+        width: 75%;
+    }
+    .options div a
+    {
+        font-size: 2.7vmax;
+    }
+    .options div i
+    {
+        font-size: 2.7vmax;
+    }
+    .bottom
+    {
+        height: 25%;
+        width: 100%;
+    }
 }
