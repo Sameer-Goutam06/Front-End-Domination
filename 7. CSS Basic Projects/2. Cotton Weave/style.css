@@ -111,7 +111,9 @@ html, body {
 }
 .right-left
 {
-  margin-right:5vw;
+  position: relative;
+  left:0;
+  bottom:2%;
   rotate:-90deg;
   transform-origin: 0 0;
 }
