@@ -1,0 +1,8 @@
+Units:
+vw- view port width
+vh- view port height
+vmin- minimum value in viewport(laptop-height,mobile-width)
+vmax-maximum value in viewport
+px-pixels
+%-percent from parent
+
