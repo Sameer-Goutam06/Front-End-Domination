@@ -6,3 +6,8 @@ vmax-maximum value in viewport
 px-pixels
 %-percent from parent
 
+flex-properties:
+flex-direction:row or column
+flex-wrap:wrap or no-wrap
+justify-content:space-between,space-around,flex-start,flex-end,center
+align-items:center,flex-start,flex-end,baseline,stretch
