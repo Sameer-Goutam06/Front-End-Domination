@@ -136,9 +136,10 @@ html,body
         display: none;
         font-size: 1.5vmax;
     }
-    .nav-top-options:nth-child(n+3)
+    .nav-top-options .in
     {
         display: initial;
+        font-weight: 500;
     }
     .nav-top-options i
     {
@@ -150,7 +151,7 @@ html,body
         height: 8%;
         width: 100%;
         font-size: 1.35vmax;
-        margin-left: 0;
+        margin-left: 0.5vmin;
     }
     .nav-bottom-options
     {
