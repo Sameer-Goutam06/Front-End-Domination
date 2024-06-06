@@ -30,22 +30,26 @@ html,body
     flex-direction: row;
     justify-content: center;
     align-items:center;
-    padding:2vw;
-    padding-left: 3vw;
+    padding:2vmax;
+    padding-left: 3vmax;
 }
 .logo div
 {
-  height: 1.5vw;
-    width: 1.5vw;
+    height: 1.5vmax;
+    width: 1.5vmax;
     background-color: black;
     border-radius: 50%;
 }
-.nav-top .options
+.nav-top-options
 {
     display: flex;
     justify-content: space-around;
-    gap:2vw;
-    margin-right:2vw;
+    gap:2vmax;
+    margin-right:2vmax;
+}
+.nav-top-options i
+{
+    display: none;
 }
 .nav-bottom
 {
@@ -56,7 +60,7 @@ html,body
     align-items: center;
     margin-right:30%;
 }
-.nav-bottom .options
+.nav-bottom-options
 {
     display: flex;
     justify-content: space-around;
@@ -119,4 +123,39 @@ html,body
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+@media screen and (max-height:1000px) and (max-width:800px)
+{
+    .nav-top
+    {
+        height: 8%;
+        width: 100%;
+    }
+    .nav-top-options h4
+    {
+        display: none;
+        font-size: 1.5vmax;
+    }
+    .nav-top-options:nth-child(n+3)
+    {
+        display: initial;
+    }
+    .nav-top-options i
+    {
+        display: initial;
+    }
+    .nav-bottom
+    {
+        height: 8%;
+        width: 100%;
+        font-size: 1.6vmax;
+    }
+    .headlines
+    {
+        height: 40%;
+    }
+    .bottom
+    {
+        height: 44%;
+    }
 }
