@@ -79,7 +79,7 @@ html,body
 .headlines::-webkit-scrollbar
 {
     background-color: transparent;
-    height: 0.5vw;
+    height: 0.5vmax;
 }
 .headlines::-webkit-scrollbar-thumb
 {
@@ -150,12 +150,13 @@ html,body
         height: 8%;
         width: 100%;
         font-size: 1.35vmax;
+        margin-left: 0;
     }
     .nav-bottom-options
     {
-        justify-content: space-evenly;
+        justify-content: space-between;
         gap:1.5vmin;
-        margin-right: 0;
+        margin-left: 0vw;
     }
    .headlines
     {
