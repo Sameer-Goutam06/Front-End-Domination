@@ -124,7 +124,7 @@ html,body
     width: 100%;
     object-fit: cover;
 }
-@media screen and (max-height:1000px) and (max-width:800px)
+@media screen and (max-height:1000px) and (max-width:800px) and (min-width:250px) and (min-height:600px)
 {
     .nav-top
     {
@@ -143,19 +143,45 @@ html,body
     .nav-top-options i
     {
         display: initial;
+        font-size: 2.15vmax;
     }
     .nav-bottom
     {
         height: 8%;
         width: 100%;
-        font-size: 1.6vmax;
+        font-size: 1.35vmax;
     }
-    .headlines
+    .nav-bottom-options
+    {
+        justify-content: space-evenly;
+        gap:1.5vmin;
+        margin-right: 0;
+    }
+   .headlines
     {
         height: 40%;
+        width: 100%;
+    }
+    .elem
+    {
+        flex-shrink: 0;
+        height: 100%;
+        width: 105%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3vmax;
+    }
+    .elem h1
+    {
+        font-size: 8vmax;
     }
     .bottom
     {
         height: 44%;
+    }
+    .bottom img
+    {
+        height: 100%;
+        object-position: initial;
     }
 }
