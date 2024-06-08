@@ -1,0 +1,103 @@
+Certainly! Let's delve deeper into the `@keyframes` CSS at-rule and CSS animations with examples.
+
+### `@keyframes` Rule:
+
+The `@keyframes` rule allows you to define a set of style changes that occur over the course of an animation. Let's take an example of a simple slide-in animation for a div element.
+
+```css
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Applying the animation to an element */
+.element {
+  animation-name: slidein;
+  animation-duration: 2s; /* Animation duration */
+}
+```
+
+In this example:
+- We define a keyframe animation called `slidein`.
+- The animation starts with the element translated 100% to the left (`transform: translateX(-100%)`) and ends with no translation (`transform: translateX(0%)`).
+- Then, we apply this animation to an HTML element with the class `.element`.
+- The animation duration is set to 2 seconds.
+
+### Keyframes and Properties:
+
+Keyframes allow us to specify intermediate styles at different points of an animation. Each keyframe represents a specific point in the animation's timeline. Properties not defined in every keyframe are interpolated.
+
+```css
+@keyframes example {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+```
+
+In this example:
+- At `0%`, the element is invisible (`opacity: 0`) and translated 100% up (`transform: translateY(-100%)`).
+- At `50%`, the opacity increases to 0.5 and the element is translated halfway down.
+- At `100%`, the opacity is fully visible (`opacity: 1`) and the element is translated to its original position.
+
+### `!important` in Keyframes:
+
+Declarations within keyframes qualified with `!important` are ignored.
+
+```css
+@keyframes important {
+  from {
+    margin-top: 50px;
+  }
+  50% {
+    margin-top: 150px !important; /* Ignored */
+  }
+  to {
+    margin-top: 100px;
+  }
+}
+```
+
+In this example, the `margin-top` property with `!important` is ignored at the `50%` keyframe.
+
+### CSS Animations:
+
+CSS animations allow for smoother transitions between styles compared to simple changes. Here's an example of a CSS animation:
+
+```css
+/* Defining the animation */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Applying the animation to an element */
+.element {
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+```
+
+In this example:
+- We define a keyframe animation called `fadein` that gradually changes the opacity of an element from 0 to 1.
+- Then, we apply this animation to an HTML element with the class `.element`.
+- The animation duration is set to 2 seconds.
+
+CSS animations provide more control over the intermediate steps of an animation sequence compared to transitions, making them suitable for more complex animations.
