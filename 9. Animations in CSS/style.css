@@ -1,0 +1,45 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body
+{
+    width:100%;
+    height:100%;
+}
+.box1
+{
+    background-color: skyblue;
+    position: absolute;
+    height: 10vmax;
+    width: 10vmax;
+    animation-name: anime;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: 2;
+    /* animation-fill-mode:forwards; */
+    animation-direction: alternate;
+    /* timing functions designs the speed of animations */
+    animation-timing-function: linear;
+}
+@keyframes anime {
+    0%
+    {
+        left:0%;
+        top: 0%;
+    }
+    50%
+    {
+        left: 80%;
+        top:0%;
+        rotate: 180deg;
+    }
+    100%
+    {
+        rotate: 180deg;
+        left: 80%;
+        top:60%;
+    } 
+}
