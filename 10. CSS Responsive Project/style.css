@@ -1,0 +1,86 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body
+{
+    width:100%;
+    height:100%;
+}
+body::-webkit-scrollbar
+{
+    background-color: transparent;
+    display: none;
+}
+.main
+{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 4vh;
+}
+.nav
+{
+    height: 10vh;
+    width: 100%;
+    border-top: 0.4vmin solid black;
+    border-bottom: 0.4vmin solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav h1
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 25%;
+    font-size: 2.5vmax;
+}
+.nav h2
+{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vmax;
+    font-family: Raleway;
+    font-weight: 600;
+    border-right: 2px solid black;
+}
+.main .nav .icon
+{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vmax;
+    font-family: Raleway;
+    font-weight: 600;
+}
+.main .center
+{
+    height: 86vh;
+    width: 100%;
+    background-color: skyblue;
+    padding: 3vmax 6vmax;
+}
+.center .content
+{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center .content video
+{
+    object-fit: contain;
+}
