@@ -69,18 +69,62 @@ body::-webkit-scrollbar
 {
     height: 86vh;
     width: 100%;
-    background-color: skyblue;
-    padding: 3vmax 6vmax;
+    padding: 2vmax 6vmax;
+    position: relative;
 }
-.center .content
+.content
 {
-    height: 90%;
+    height: 100%;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.content video
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+.overlay
+{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 2vmax;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.center .content video
+.overlay .over1
 {
-    object-fit: contain;
+    height: 60%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-bottom: 2px solid white;
+    padding: 0 3vmax;
+}
+.overlay .over2
+{
+    height: 30%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vmax;
+    color: #fff;
+}
+.right-icon
+{
+    font-size: 2vmax;
+    font-weight: 500;
 }
