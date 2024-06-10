@@ -142,11 +142,7 @@ body::-webkit-scrollbar
 {
     height: 40vh;
     width: 100%;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-evenly; */
     white-space: nowrap;
-    /* overflow-x: auto; */
     overflow-y: hidden;
 }
 .scroll::-webkit-scrollbar
