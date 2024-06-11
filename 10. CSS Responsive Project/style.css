@@ -395,8 +395,8 @@ body::-webkit-scrollbar {
     }
     .model1 img
     {
-        height: 160%;
-        width: 90%;
+        height: 140%;
+        width: 100%;
         object-position: medium;
     }
 }
@@ -414,8 +414,8 @@ body::-webkit-scrollbar {
 {
     height: 100%;
     width: 40%;
-    object-fit: cover;
-    border-radius: 10%;
+    object-fit: contain;
+    border-radius: 70%;
     object-position: top;
 }
 .page5 .elem4 .model1 img
