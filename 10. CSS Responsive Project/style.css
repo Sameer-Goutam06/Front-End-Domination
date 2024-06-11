@@ -386,16 +386,24 @@ body::-webkit-scrollbar {
 }
 .page5 .elem:hover
 {
+    background-color: black;
+    color: white;
     .model1
     {
         opacity: 1;
         left:30%;
     }
+    .model1 img
+    {
+        height: 160%;
+        width: 90%;
+        object-position: medium;
+    }
 }
 .page5 .model2
 {
     height: 100%;
-    width: 30%;
+    width: 40%;
     padding: 3% 0;
 }
 .page5 p
@@ -404,10 +412,11 @@ body::-webkit-scrollbar {
 }
 .page5 .model1 img
 {
-    height: 90%;
+    height: 100%;
     width: 40%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10%;
+    object-position: top;
 }
 .page5 .elem4 .model1 img
 {
