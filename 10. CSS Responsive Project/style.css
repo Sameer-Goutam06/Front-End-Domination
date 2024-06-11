@@ -227,7 +227,7 @@ body::-webkit-scrollbar {
     height: 90%;
     width: 100%;
     object-fit: cover;
-    object-position: middle;
+    object-position: 3%;
 }
 .part1 h1
 {
@@ -287,6 +287,20 @@ body::-webkit-scrollbar {
     height: 50%;
     width: 75%;
     mix-blend-mode: darken;
+    animation-name: rotate;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate {
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
 }
 .page3 .left h2
 {
