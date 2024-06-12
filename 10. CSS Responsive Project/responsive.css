@@ -1,4 +1,58 @@
 @media screen and (max-height:1000px) and (max-width:800px) and (min-width:250px) and (min-height:600px)
 {
-    
+    .main
+    {
+        width:100vw;
+        padding-top: 2vh;
+    }
+    .main .nav
+    {
+        height: 5vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3% 6%;
+    }
+    .main .nav h1::after
+    {
+        top:85%;
+        font-size: 0.9vmax;
+        left:10%;
+    }
+    .main .nav h1::before
+    {
+        top:-45%;
+        font-size: 0.9vmax;
+        left:120%;
+    }
+    .main .nav h2
+    {
+        display: none;
+    }
+    .main .nav .icon
+    {
+        display: none;
+    }
+    .main .nav .menu
+    {
+        display: initial;
+        border-right: none;
+        width: fit-content;
+    }
+    .main .center 
+    {
+        height: 20vh;
+        width: 100%;
+        padding: 2% 10%;
+    }
+    .main .center .content
+    {
+        height: 100%;
+        width: 100%;
+    }
+    .alphabets
+    {
+        width: 100vw;
+    }
 }

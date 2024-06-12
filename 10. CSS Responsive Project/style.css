@@ -28,6 +28,10 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: space-between;
 }
+.main .nav .menu
+{
+    display: none;
+}
 .nav h1 
 {
     height: 100%;
@@ -391,13 +395,11 @@ body::-webkit-scrollbar {
     .model1
     {
         opacity: 1;
-        left:30%;
     }
     .model1 img
     {
         height: 140%;
         width: 100%;
-        object-position: medium;
     }
 }
 .page5 .model2
@@ -416,10 +418,6 @@ body::-webkit-scrollbar {
     width: 40%;
     object-fit: contain;
     border-radius: 70%;
-    object-position: top;
-}
-.page5 .elem4 .model1 img
-{
     object-position: top;
 }
 .page5 .elem4
