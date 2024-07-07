@@ -1,0 +1,141 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body
+{
+    width:100%;
+    height:100%;
+}
+.main
+{
+    width:100%;
+    height:100%;
+    background-color:#fafafa;
+}
+.page1
+{
+    width:100%;
+    height:125vh;
+}
+.page1 .nav
+{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.page1 .nav .options-left
+{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1vmax;
+    font-family: poppins;
+    padding-right: 1.5%;
+}
+.page1 .nav .options-left h4
+{
+    font-weight: 350;
+    cursor: pointer;
+}
+.page1 .nav .logo
+{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 30%;
+    padding: 0.5%;
+    padding-bottom: 1%;
+    cursor: pointer;
+}
+.nav .logo img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.nav .options-right
+{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav .options-right button
+{
+    margin-right: 3%;
+    height: 40%;
+    width: 25%;
+    border-radius: 3vmax;
+    background-color: transparent;
+    border: none;
+    font-family: Roboto;
+    font-size: 1vmax;
+    cursor: pointer;
+    padding: 2%;
+}
+.nav .options-right .signup
+{
+    background-color: #0d0c22;
+    color: white;
+}
+.page1 .header
+{
+    height: 53vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 15%;
+    font-family: Raleway;
+}
+.page1 .header h4
+{
+    font-size: 1.1vmax;
+    background-color: rgba(180, 36, 180, 0.616);
+    padding: 1.5% 2.5%;
+    border-radius: 5vmin;
+    cursor: pointer;
+}
+.page1 .header h1
+{
+    font-size: 4vmax;
+    text-align: center;
+    font-family: 'Source Serif 4';  
+    font-weight: 500;
+    color: #0d0c22;  
+}
+.page1 .header h3
+{
+    font-size: 1.1vmax;
+    background-color: rgba(255, 228, 196, 0.774);
+    padding: 1.5% 2.5%;
+    cursor: pointer;
+}
+.page1 .header button
+{
+    font-size: 1.1vmax;
+    padding: 1.5% 2.5%;
+    background-color:#0d0c22;
+    color: white;
+    border-radius: 5vmin;
+    border: none;
+    cursor: pointer;
+}
+.page1 .scroller
+{
+    height: 60vh;
+    width: 100%;
+    border-top: 2px solid black;
+}

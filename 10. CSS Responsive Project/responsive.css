@@ -3,27 +3,31 @@
     .main
     {
         width:100vw;
-        padding-top: 2vh;
+        padding-top: 3.5vmax;
     }
     .main .nav
     {
-        height: 5vh;
+        height: 8vh;
         width: 100vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 3% 6%;
+        padding: 3% 8%;
+    }
+    .main .nav h1
+    {
+        font-size: 2.8vmax;
     }
     .main .nav h1::after
     {
         top:85%;
-        font-size: 0.9vmax;
-        left:10%;
+        font-size:1vmax;
+        left:-5%;
     }
     .main .nav h1::before
     {
-        top:-45%;
-        font-size: 0.9vmax;
+        top:-5%;
+        font-size: 1vmax;
         left:120%;
     }
     .main .nav h2
@@ -39,20 +43,295 @@
         display: initial;
         border-right: none;
         width: fit-content;
+        margin-top:7%;
+        font-size: 2vmax;
     }
     .main .center 
     {
-        height: 20vh;
+        height:35vmax;
         width: 100%;
-        padding: 2% 10%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding: 5% 5%;
     }
     .main .center .content
     {
         height: 100%;
         width: 100%;
     }
+    .overlay
+    {
+        height: 40%;
+        width: 100%;
+        padding:0;
+    }
+    .overlay .over1 h1
+    {
+        font-size: 2.2vmax;
+    }
+    .overlay .over1 h2
+    {
+        font-size: 1.5vmax;
+    }
+    .overlay .over2 h2
+    {
+        font-size: 2vmax;
+    }
+    .scroll
+    {
+        height:15vmax;
+        margin: 2vmax 0;
+        align-items: center;
+    }
+    .scroll .container img
+    {
+        height: 80%;
+        width: 30%;
+    }
     .alphabets
     {
-        width: 100vw;
+        width:100vw;
+        overflow-x: scroll;
+        padding-right: 2vmax;
+    }
+    .alphabets h2
+    {
+        margin-left: 5vmax;
+        font-size: 4vmax;
+        padding-right: 20vmax;
+    }
+    .alphabets h5
+    {
+        font-size: 2vmax;
+    }
+    .page2
+    {
+        height: 150vmax;
+        flex-direction: column;
+    }
+    .page2 .part1
+    {
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+    }
+    .page2 .part2
+    {
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+    .page3
+    {
+        height: 100vmax;
+        width: 100%;
+        flex-direction: column;
+    }
+    .page3 .left
+    {
+        height: 40%;
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .page3 .left img
+    {
+        height: 45%;
+        width: 60%;
+    }
+    .page3 .left h2
+    {
+        top:9.7vmax;
+        left: 20vmax;
+        font-size: 4vmax;
+    }
+    .page3 .left h3
+    {
+        font-size: 1.5vmax;
+    }
+    .page3 .right
+    {
+        padding-top: 0;
+        height: 70%;
+        width: 100%;
+        padding: 1vmax 0;
+        object-fit:contain;
+    }
+    .page4
+    {
+        height: 80vh;
+        width: 100%;
+        padding:2vmax;
+    }
+    .page5 .elem .model2
+    {
+        padding-top: 11%;
+        align-self:flex-start;
+    }
+    .page5{
+        height: 80vh;
+    }
+    .page5 h1
+    {
+        font-size: 2vmax;
+    }
+    .page5 .elem .model1
+    {
+        display: flex;
+        align-items: flex-start;
+
+    }
+    .page5 .elem:hover
+    {
+        .model1 img
+        {
+            height: 100%;
+            width: 90%;
+            scale:1.2;
+            margin-left: -20px;
+            border-radius: 0%;
+        }
+    }
+    .page6
+    {
+        height: 120vmax;
+        flex-direction: column;
+        padding:1% 0;
+    }
+    .page6 .left
+    {
+        height: 100%;
+        width: 100%;
+    }
+    .page6 .right
+    {
+        height: 100%;
+        width: 100%;
+    }
+    .page7
+    {
+        height: 40vmax;
+        padding-bottom: 0;
+    }
+    .page8
+    {
+        padding-top: 1vmax;
+        height: 130vmax;
+        flex-direction: column;
+    }
+    .page8 .part1
+    {
+        height: 40%;
+        width: 100%;
+        padding-bottom: 1vmax;
+    }
+    .page8 .part2
+    {
+        height: 70%;
+        width: 100%;
+    }
+    .blog
+    {
+        height: 135vmax;
+        flex-direction: column;
+    }
+    .blog .left
+    {
+        height: 10%;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .blog .middle
+    {
+        height: 80%;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .blog .middle .top
+    {
+        height: 20%;
+    }
+    .blog .middle img
+    {
+        height: 80%;
+    }
+    .blog .right
+    {
+        height: 80%;
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    .blog .right .top
+    {
+        height: 20%;
+    }
+    .blog .right img
+    {
+        height: 80%;
+    }
+    .footer
+    {
+        height: 50vmax;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .footer .logo
+    {
+        height:15%;
+        width: 10%; 
+    }
+    .footer .logo h1::before
+    {
+        position: absolute;
+        top:-20%;
+        left:90%;
+        font-size: 1vmax;
+    }
+    .footer .nav-bottom
+    {
+        height: 80%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 4%;
+    }
+    .footer .nav-bottom .left
+    {
+        height: 15%;
+        width: 100%;
+        justify-content: flex-start;
+        border-right: none;
+    }
+    .footer .nav-bottom .middle
+    {
+        height: 15%;
+        width: 100%;
+        justify-content: flex-start;
+        border-right: none;
+    }
+    .footer .nav-bottom .right
+    {
+        height: 60%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .footer .nav-bottom .right .top
+    {
+        justify-content: flex-start;
+        border-bottom: none;
+    }
+    .nav-bottom .right .mid
+    {
+        font-size: 3vmax;
+        padding-right:45%;
+        padding-left: 0;
+    }
+    .nav-bottom .right .bottom
+    {
+        height: 40%;
+        width: 100%;
+        align-items: flex-start;
     }
 }

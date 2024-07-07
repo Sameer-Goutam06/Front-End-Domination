@@ -1,7 +1,8 @@
+@import url('https://fonts.cdnfonts.com/css/monument');
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
 html, body {
     width: 100%;
@@ -187,7 +188,7 @@ body::-webkit-scrollbar {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 1vw;
+    gap: 1vmax;
     align-items: center;
     font-style: italic;
     border-top: 2px solid black;
@@ -196,7 +197,7 @@ body::-webkit-scrollbar {
 }
 .alphabets h2 {
     text-decoration: underline;
-    margin-right: 2vw;
+    margin-right: 2vmax;
 }
 .alphabets h5 {
     font-size: 1.1vw;
@@ -283,13 +284,13 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: space-evenly;
     align-items:center;
-    padding: 1vw 3vw;
+    padding: 1vmax 3vmax;
     position: relative;
 }
 .page3 .left img
 {
     height: 50%;
-    width: 75%;
+    width: 79%;
     mix-blend-mode: darken;
     animation-name: rotate;
     animation-duration: 8s;
@@ -310,7 +311,7 @@ body::-webkit-scrollbar {
 {
     position:absolute;
     top: 25vh;
-    left:18vw;
+    left:18vmax;
     font-size: 7vmax;
     font-weight: 100;
 }
@@ -318,7 +319,7 @@ body::-webkit-scrollbar {
 {
     height: 100%;
     width: 45%;
-    padding: 1vw 5vw;
+    padding: 1vmax 5vmax;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -446,7 +447,6 @@ body::-webkit-scrollbar {
 {
     height: 100%;
     width: 85%;
-
 }
 .page6 .right
 {
@@ -561,7 +561,7 @@ body::-webkit-scrollbar {
 }
 .marquee
 {
-    height: 10vh;
+    height: 14vmin;
     width: 100%;
     font-family: monument;
     display: flex;
@@ -574,14 +574,14 @@ body::-webkit-scrollbar {
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: #f8f8f8;
+    padding-top:1vmin;
 }
 .marquee h4
 {
     display: inline-block;
-    font-size: 4vw;
+    font-size: 4vmax;
     -webkit-text-stroke: 2px rgb(0, 0, 0);
     color: transparent;
-
 }
 .marquee .marqueeContainer
 {
