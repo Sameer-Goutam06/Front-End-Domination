@@ -14,11 +14,12 @@ html,body
     width:100%;
     height:100%;
     background-color:#fafafa;
+    overflow-x: hidden;
 }
 .page1
 {
     width:100%;
-    height:125vh;
+    height:75vh;
 }
 .page1 .nav
 {
@@ -71,6 +72,14 @@ html,body
     justify-content: flex-end;
     align-items: center;
 }
+.nav .options-right #search
+{
+    height: 45%;
+    width: 70%;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding-left: 1.5vmax;
+}
 .nav .options-right button
 {
     margin-right: 3%;
@@ -91,18 +100,19 @@ html,body
 }
 .page1 .header
 {
-    height: 53vh;
+    height: 63vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 1.3vmax;
     align-items: center;
-    padding: 1% 15%;
+    padding: 4vmax 15%;
     font-family: Raleway;
 }
 .page1 .header h4
 {
-    font-size: 1.1vmax;
+    font-size: 1.3vmax;
     background-color: rgba(180, 36, 180, 0.616);
     padding: 1.5% 2.5%;
     border-radius: 5vmin;
@@ -110,7 +120,7 @@ html,body
 }
 .page1 .header h1
 {
-    font-size: 4vmax;
+    font-size: 5vmax;
     text-align: center;
     font-family: 'Source Serif 4';  
     font-weight: 500;
@@ -126,16 +136,163 @@ html,body
 .page1 .header button
 {
     font-size: 1.1vmax;
-    padding: 1.5% 2.5%;
+    padding:  1.5% 3%;
     background-color:#0d0c22;
     color: white;
     border-radius: 5vmin;
     border: none;
     cursor: pointer;
 }
-.page1 .scroller
+.scrollContainer
 {
-    height: 60vh;
+    height: 50vh;
+    width:100vw;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.scroller
+{
+    display: flex;
+    height: 100%;
+    width: 200vw;
+    gap:20px;
+    flex-wrap: nowrap;
+    animation: anime 60s linear 0s infinite;
+    padding: 1%;
+}
+@keyframes anime {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
+}
+.elem
+{
+    display: flex;
+    width:20%;
+    border-radius: 20px;
+    position: relative;
+}
+.elem img
+{
+    height: 100%;
     width: 100%;
-    border-top: 2px solid black;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.elem video
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.overlay
+{
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    top:70%;
+    backdrop-filter: blur(3px);
+    color: white;
+    padding-left: 1vmax;
+}
+.overlay p
+{
+    margin-bottom: 0.5vmax;
+}
+.overlay div
+{
+    margin-top: 1vmax;
+    span
+    {
+        border-radius: 20px;
+        border: 2px solid white;
+        padding:2% 2.5%;
+    }
+    cursor: pointer;
+}
+.page2
+{
+    height:fit-content;
+    width: 100vw;
+    h1
+    {
+        padding: 3%;
+        font-family: 'Source Serif 4';
+        font-weight: 500;
+    }
+}
+.page2 .row
+{
+    height: 40vh;
+    width: 100vw;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1%;
+    padding-right: 2.5%;
+}
+.row .col
+{
+    height: 100%;
+    width: 24%;
+    background-color: red;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+.row .col .col-main
+{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 0;
+}
+.col-main img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.col-main-overlay
+{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    padding: 6% 3%;
+    justify-content: space-around;
+    gap:60%;
+    color: white;
+}
+.col-main-overlay h4 span
+{
+    border-radius:50%;
+    border:2px solid white;
+    padding: 5% 7%;
+    
+}
+.row .col .col-footer
+{
+    position: absolute;
+    top:90%;
+    height: 10%;
+    width: 100%;
+    background-color: skyblue;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0% 3%;
 }

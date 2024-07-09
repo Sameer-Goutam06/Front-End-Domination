@@ -154,9 +154,6 @@ body::-webkit-scrollbar {
     overflow-y: hidden;
     background-color: #f8f8f8;
 }
-.scroll::-webkit-scrollbar {
-    display: none;
-}
 .container {
     height: 100%;
     width: 100%;
