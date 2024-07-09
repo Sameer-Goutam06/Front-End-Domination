@@ -151,9 +151,10 @@ html,body
 .scrollContainer
 {
     height: 50vh;
-    width:100vw;
+    width:fit-content;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    position: relative;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -162,24 +163,15 @@ html,body
     font-family: Raleway;
     display: flex;
     height: 100%;
-    width: 200vw;
-    gap:20px;
+    width: fit-content;
+    gap:30px;
     flex-wrap: nowrap;
-    animation: anime 60s linear 0s infinite;
-    padding: 1%;
-}
-@keyframes anime {
-    from{
-      transform: translateX(0);
-    }
-    to{
-      transform: translateX(-100%);
-    }
+    animation: anime 10s linear 0s infinite;
+    margin-right: 30px;
 }
 .elem
 {
-    display: flex;
-    width:20%;
+    width:16.5vw;
     border-radius: 20px;
     position: relative;
 }
@@ -223,6 +215,14 @@ html,body
         padding:2% 2.5%;
     }
     cursor: pointer;
+}
+@keyframes anime {
+    from{
+      transform: translateX(0);
+    }
+    to{
+      transform: translateX(-100%);
+    }
 }
 .page2
 {
