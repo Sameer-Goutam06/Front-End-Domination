@@ -9,6 +9,12 @@ html,body
     width:100%;
     height:100%;
 }
+.source-serif-4-font {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 .main
 {
     width:100%;
@@ -19,7 +25,8 @@ html,body
 .page1
 {
     width:100%;
-    height:75vh;
+    height:80vh;
+    margin-bottom: 2vh;
 }
 .page1 .nav
 {
@@ -122,7 +129,7 @@ html,body
 {
     font-size: 5vmax;
     text-align: center;
-    font-family: 'Source Serif 4';  
+    font-family: "Source Serif 4",serif;  
     font-weight: 500;
     color: #0d0c22;  
 }
@@ -426,24 +433,15 @@ html,body
     border: none;
     cursor: pointer;
     margin-bottom: 2vmax;
+    color: #fafafa;
+    background-color: #0d0c22;
+    
 }
-.page3 #b1:hover
-{
-    color: #0d0c22;
-    background-color: #fafafa;
-    font-weight: 500;
-}
-#b2
+.page3 button:hover
 {
     background-color:#fafafa ;
     color: #0d0c22;
-    font-weight: 550;
-    margin-bottom: 0.7vmax;
-}
-#b2:hover
-{
-    color: white;
-    background-color: #0d0c22;
+    font-weight: 500;
 }
 .page3 a
 {
