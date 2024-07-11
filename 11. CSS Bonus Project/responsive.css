@@ -1,0 +1,222 @@
+@media screen and (max-height:1000px) and (max-width:800px) and (min-width:250px) and (min-height:600px)
+{
+    .source-serif-4-font {
+        font-family: "Source Serif 4", serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+    .page1
+    {
+        height: 65vh;
+        width: 100%;
+        padding: 0;
+    }
+    .page1 .nav
+    {
+        height: 17vh;
+    }
+    .page1 .nav .options-left
+    {
+        width: 20%;
+    }
+    .page1 .nav .options-left h4
+    {
+        display: none;
+    }
+    .page1 .nav .options-left h5
+    {
+        margin-top: 1vmax;
+        display: initial;
+        font-size: 2.5vmax;
+    }
+    .page1 .nav .logo
+    {
+        scale: 0.85;
+        width: 35%;
+        justify-self: center;
+        margin-bottom: 0.5vmax;
+    }
+    .page1 .options-right
+    {
+        width:65%;
+        padding: 5% 0;
+    }
+    .page1 .options-right #search
+    {
+        display: none;
+    }
+    .page1 .options-right button
+    {
+        font-size: 1.45vmax;
+        height: 30%;
+    }
+    .page1 .header
+    {
+        height: 45vh;
+        display: flex;
+        padding:1% 10%;
+        justify-content: space-around;
+    }
+    .page1 .header h4
+    {
+        font-size: 1.7vmax;
+    }
+    .page1 .header h1
+    {
+        font-size:5.5vmax;
+    }
+    .page1 .header h3
+    {
+        text-align: center;
+        font-size: 1.5vmax;
+        padding: 3% 4%;
+    }
+    .page1 .header button
+    {
+        height: 5.5vmax;
+        width: 35%;
+        font-size: 1.5vmax;
+        border-radius: 8vmax;
+    }
+    .scrollContainer
+    {
+        height: 35vh;
+    }
+    .elem
+    {
+        width: 52vw;
+    }
+    .page2
+    {
+        height: fit-content;
+    }
+    .page2 .row
+    {
+        height: 180vh;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        padding: 0 5%;
+    }
+    .page2 h1
+    {
+        font-size: 3.3vmax;
+        margin-top: 4vmax;
+        margin-bottom: 2vmax;
+        font-family:Raleway;
+    }
+    .row .col
+    {
+        height: 42vh;
+        width: 100%;
+    }
+    .page2 h3
+    {
+        font-size: 2vmax;
+        padding: 4% 6%;
+        background-color: black;
+        color: white;
+        margin-bottom: 5vmax;
+    }
+    .page3
+    {
+        height: 50vh;
+        padding: 4%;
+    }
+    .page3 h1
+    {
+        font-size: 4.5vmax;
+        padding: 3%;
+    }
+    .page3 p
+    {
+        margin: 2vmax;
+    }
+    .page3 button
+    {
+        height: 5vmax;
+        width: fit-content;
+        padding: 2% 4%;
+        margin-top: 1vmax;
+    }
+    .marquee
+    {
+        height: 25vh;
+    }
+    .marquee .container .child
+    {
+        width: 75vw;
+    }
+    .footer
+    {
+        height: 52vh;
+        flex-direction: column;
+    }
+    .footer-top
+    {
+        height: 50%;
+        flex-direction: column;
+    }
+    .footer-top .logo
+    {
+        height: 50%;
+        width: 100%;
+        padding: 1% 20%;
+        object-position: center;
+        object-fit:cover;
+        margin-bottom: 2vmax;
+    }
+    .footer-top .options
+    {
+        flex-direction: row;
+        height: 40%;
+        width: 100%;
+        justify-content: space-around;
+        gap:2vmax;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 5vmax;
+    }
+    .footer-top .options h3
+    {
+        flex-shrink: 0;
+        width: fit-content;
+        align-self: center;
+    }
+    .footer-top .social
+    {
+        height: 10%;
+        width: 100%;
+        justify-content: center;
+        gap: 3vmax;
+        font-size: 2vmax;
+    }
+    .footer-bottom
+    {
+        margin-top: 9vmax;
+        height: 50%;
+        width: 100%;
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .footer-bottom .left
+    {
+        justify-content: space-around;
+        gap:2vmax;
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+    .footer-bottom .left h3
+    {
+        width: fit-content;
+    }
+    .footer-bottom .right
+    {
+        margin-top: 3vmax;
+        justify-content: space-around;
+        gap:2vmax;
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+}

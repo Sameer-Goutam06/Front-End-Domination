@@ -53,6 +53,10 @@ html,body
     font-weight: 350;
     cursor: pointer;
 }
+.page1 .nav .options-left h5
+{
+    display: none;
+}
 .page1 .nav .logo
 {
     height: 100%;
@@ -139,6 +143,7 @@ html,body
     background-color: rgba(255, 228, 196, 0.774);
     padding: 1.5% 2.5%;
     cursor: pointer;
+    border-radius: 1vmax;
 }
 .page1 .header button
 {
@@ -181,6 +186,7 @@ html,body
     width:16.5vw;
     border-radius: 20px;
     position: relative;
+    cursor: pointer;
 }
 .elem img
 {
@@ -200,7 +206,7 @@ html,body
 }
 .overlay
 {
-    height: 30%;
+    height: 35%;
     width: 100%;
     position: absolute;
     top:70%;
@@ -214,7 +220,7 @@ html,body
 }
 .overlay div
 {
-    margin-top: 1vmax;
+    margin-top: 1.5vmax;
     span
     {
         border-radius: 20px;
@@ -236,13 +242,13 @@ html,body
     font-family: Poppins;
     height:fit-content;
     width: 100vw;
-    h1
-    {
-        padding: 3%;
-        font-family: 'Source Serif 4';
-        font-weight: 500;
-        font-size: 3vmax;
-    }
+}
+.page2 h1
+{
+    padding: 3%;
+    font-family: 'Source Serif 4';
+    font-weight: 500;
+    font-size: 3vmax;
 }
 .page2 .row
 {
@@ -442,6 +448,10 @@ html,body
     background-color:#fafafa ;
     color: #0d0c22;
     font-weight: 500;
+}
+.join-dribbble
+{
+    margin-bottom: 1vmax;
 }
 .page3 a
 {
