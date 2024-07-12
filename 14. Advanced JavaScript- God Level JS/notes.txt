@@ -1,0 +1,7 @@
+1. Understanding this keyword call apply bind
+2. Prototype Inheritance
+3. Closures
+4. event delegation
+5. Higher order functions
+6. Error handling
+7. custom events
