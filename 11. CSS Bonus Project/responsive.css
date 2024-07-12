@@ -111,6 +111,19 @@
         height: 42vh;
         width: 100%;
     }
+    .col-main-overlay
+    {
+        height: 45%;
+    }
+    .col-main-overlay p
+    {
+        font-size: 2.5vmax;
+        line-height: 2.9vmax;
+    }
+    .col-footer div p
+    {
+        line-height: 2.2vmax;
+    }
     .page2 h3
     {
         font-size: 2vmax;
