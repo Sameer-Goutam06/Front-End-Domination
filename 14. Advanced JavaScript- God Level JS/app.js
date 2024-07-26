@@ -48,6 +48,7 @@ let user = {
         console.log(this); // Ye object return kr rha hai 
         function childFnc(){
             console.log(this); // ye window return kr rha hai, to isse koi object ki value nahi access kr skte hai
+            //a function must be created seperately or in a object but cant be nested inside other function, if did this returns window
         }
 
         childFnc()
@@ -61,6 +62,7 @@ user.sayName() // Returns Window
 
 let userDetails = {
     name : function(){
+        //arrow function takes its this value from the parent
         let child =()=>{
             console.log(this); //returns object
         }

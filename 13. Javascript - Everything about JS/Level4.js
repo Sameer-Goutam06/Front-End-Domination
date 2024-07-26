@@ -10,23 +10,23 @@
 
 
 function number(){
-    for(let i=0; i<11;i++)
-    console.log('hello');
-  }
+  for(let i=0; i<11;i++)
+  console.log('hello');
+}
   
-  number();// Calling the function
-  
-  // HappyBirthday
-  let birthDate = 7;
-  let todaysDate = 7;
-  
-  function HappyBirthday(){
-    console.log('Happy Birthday');
-  }
-  
-  if(birthDate == todaysDate){
-    HappyBirthday()
-  }
+number();// Calling the function
+
+// HappyBirthday
+let birthDate = 7;
+let todaysDate = 7;
+
+function HappyBirthday(){
+  console.log('Happy Birthday');
+}
+
+if(birthDate == todaysDate){
+  HappyBirthday()
+}
 
 //   Extras we should know---
 // arguments and parameter
