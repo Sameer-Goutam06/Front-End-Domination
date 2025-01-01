@@ -36,10 +36,20 @@ let obj2 = {
         head : function(){
             console.log(this); // Returns the object jisme woh bana hai
         }
+        ,
+        k:{
+        abcd:function(){
+            console.log(this);
+        },
+        s:"hi"
+        }
+    },
+     // Returns the object jisme woh bana hai
     }
-}
+
 
 obj2.title.head();
+obj2.title.k.abcd();
 
 // Function inside method (es5)
 
@@ -84,7 +94,16 @@ let ans = new abcd(); // new keyword ka use hua hai to ek blank object return ho
 
 // Value of this in event listener 
 
-document.querySelector('button').addEventListener('click',function(){
+const btns=document.querySelectorAll('.Btn');
+btns.forEach((e)=>{
+    e.addEventListener('click',function(){
+        console.log(this);// issme this refer krega uss element ko jisko select kr rakha hai
+        this.style.backgroundColor = "cyan"
+        this.style.color = "white"
+    })
+})
+
+document.querySelector('.Btn').addEventListener('click',function(){
     console.log(this);// issme this refer krega uss element ko jisko select kr rakha hai
     this.style.backgroundColor = "cyan"
     this.style.color = "white"
