@@ -10,7 +10,7 @@ const cardData = [
       id: 2,
       image: "https://via.placeholder.com/300",
       title: "Document Two",
-      description: "This is the second document covering insights into topic two."
+      description: "This is the first document with details about topic two."
     },
     {
       id: 3,
