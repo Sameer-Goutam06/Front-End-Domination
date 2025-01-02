@@ -1,0 +1,23 @@
+React setup using vite
+------------------------------------------------------------------------------------------------
+npm create vite@latest <app-name> -- --template react
+cd <app-name>
+
+npm install
+npm run dev #to start react server
+
+tailwindcss Setup inside react app
+------------------------------------------------------------------------------------------------
+npm install -D tailwindcss postcss autoprefixer #supports all browsers
+npx tailwindcss init # to create tailwind.config.js
+
+in tailwind.config.js change,
+content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+And in index.css keep,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
