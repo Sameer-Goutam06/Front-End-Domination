@@ -4,6 +4,8 @@ import Part2UseState from "./components/Part2UseState";
 import Part3UseState from "./components/Part3UseState";
 import Part1UseEffect from "./components/Part1UseEffect";
 import Part2UseEffect from "./components/Part2UseEffect";
+import Part1UseRef from "./components/Part1UseRef";
+import Part2UseRef from "./components/Part2UseRef";
 //understanding states and properties
 export default function App() {
   return (
@@ -17,6 +19,10 @@ export default function App() {
       <Part1UseEffect></Part1UseEffect>
       <br/>
       <Part2UseEffect></Part2UseEffect>
+      <br/>
+      <Part1UseRef></Part1UseRef>
+      <br/>
+      <Part2UseRef></Part2UseRef>
     </>
   );
 }
