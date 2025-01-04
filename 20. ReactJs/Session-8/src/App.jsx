@@ -1,6 +1,9 @@
+import PropsDemo from "./components/Part1Props";
 import Part1UseState from "./components/Part1UseState";
 import Part2UseState from "./components/Part2UseState";
 import Part3UseState from "./components/Part3UseState";
+import Part1UseEffect from "./components/Part1UseEffect";
+import Part2UseEffect from "./components/Part2UseEffect";
 //understanding states and properties
 export default function App() {
   return (
@@ -8,6 +11,12 @@ export default function App() {
       <Part1UseState></Part1UseState>
       <Part2UseState></Part2UseState>
       <Part3UseState></Part3UseState>
+      <br/>
+      <PropsDemo></PropsDemo>
+      <br/>
+      <Part1UseEffect></Part1UseEffect>
+      <br/>
+      <Part2UseEffect></Part2UseEffect>
     </>
   );
 }

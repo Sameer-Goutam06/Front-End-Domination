@@ -1,0 +1,10 @@
+Hooks Hierarchy to revise:
+useState: Learn state management.
+useEffect: Understand side effects and lifecycle behaviors.
+useContext: Manage global state using React Context.
+useReducer: Learn state management with complex logic.
+useRef: Handle DOM manipulation and persist values across renders.
+useCallback: Optimize function references for performance.
+useMemo: Memoize expensive calculations.
+useLayoutEffect: Handle updates affecting DOM layout before painting.
+Custom Hooks: Create reusable logic for specific needs.
