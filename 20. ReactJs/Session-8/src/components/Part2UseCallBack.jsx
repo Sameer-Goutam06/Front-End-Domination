@@ -1,5 +1,7 @@
 import React, { useState, useCallback, useMemo } from 'react';
 import propTypes from 'prop-types';
+// React.memo is a higher-order component (HOC) in React that optimizes functional components by memoizing their output. 
+// It prevents unnecessary re-renders by reusing the last rendered output if the props remain unchanged.
 const ProductList = React.memo(({ filteredProducts }) => {
   console.log('ProductList rendered');
   return (
@@ -24,9 +26,10 @@ const Parent = () => {
 
   // Memoize the filter function using useCallback
   const filterProducts = useCallback(
-    (term) => products.filter((product) =>
-      product.name.toLowerCase().includes(term.toLowerCase())
-    ),
+    (term) =>{ 
+        console.log("useCallBack triggered: " + term);
+        return products.filter((product) =>product.name.toLowerCase().includes(term.toLowerCase())
+    )},
     [products] // Dependency: Updates if products change
   );
 
