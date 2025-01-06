@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import PropsDemo from "./components/Props/Part1Props";
 import Part1UseState from "./components/Hooks/Part1UseState";
 import Part2UseState from "./components/Hooks/Part2UseState";
@@ -15,6 +14,7 @@ import Part1UseReducer from "./components/Hooks/Part1UseReducer";
 import Part2UseReducer from "./components/Hooks/Part2UseReducer";
 import { ThemeProvider} from "./components/Hooks/7.UseContext/ThemeContext";
 import ThemeSwitcher from "./components/Hooks/7.UseContext/ThemeSwitcher";
+import CounterComponent from "./components/Hooks/Custom Hooks/CounterComponent";
 //understanding states and properties
 export default function App() {
   return (
@@ -50,6 +50,8 @@ export default function App() {
       <ThemeProvider>
         <ThemeSwitcher />
       </ThemeProvider>
+      <br/>
+    <CounterComponent/>
     </>
   );
 }
