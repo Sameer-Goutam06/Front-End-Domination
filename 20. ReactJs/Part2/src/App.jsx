@@ -13,6 +13,8 @@ import Part3UseCallBack from "./components/Hooks/Part3UseCallBack";
 import Part1UseMemo from "./components/Hooks/Part1UseMemo";
 import Part1UseReducer from "./components/Hooks/Part1UseReducer";
 import Part2UseReducer from "./components/Hooks/Part2UseReducer";
+import { ThemeProvider} from "./components/Hooks/7.UseContext/ThemeContext";
+import ThemeSwitcher from "./components/Hooks/7.UseContext/ThemeSwitcher";
 //understanding states and properties
 export default function App() {
   return (
@@ -45,6 +47,9 @@ export default function App() {
       <br/>
       <Part2UseReducer/>
       <br/>
+      <ThemeProvider>
+        <ThemeSwitcher />
+      </ThemeProvider>
     </>
   );
 }
