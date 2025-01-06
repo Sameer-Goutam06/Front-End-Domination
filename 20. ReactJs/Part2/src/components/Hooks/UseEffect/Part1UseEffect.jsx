@@ -14,6 +14,7 @@ function Part1UseEffect() {
 
   return (
     <div>
+      <h1>useEffect Example</h1>
       <h1>Count: {count}</h1>
       <button onClick={() => setCount(count + 1)}>Increment</button>
     </div>

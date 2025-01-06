@@ -50,6 +50,7 @@ const increment = useCallback(() => setCount((prev) => prev + 1), []);
 
 return (
     <div>
+    <h1>with useCallBack</h1>
     <Child1 onClick={increment} />
     <p>Count: {count}</p>
     </div>

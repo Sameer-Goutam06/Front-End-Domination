@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import PropsDemo from "./components/Props/Part1Props";
 import Part1UseState from "./components/Hooks/Part1UseState";
 import Part2UseState from "./components/Hooks/Part2UseState";
@@ -9,6 +10,9 @@ import Part2UseRef from "./components/Hooks/Part2UseRef";
 import {Parent0,Parent1} from "./components/Hooks/Part1UseCallBack";
 import Part2UseCallBack from "./components/Hooks/Part2UseCallBack";
 import Part3UseCallBack from "./components/Hooks/Part3UseCallBack";
+import Part1UseMemo from "./components/Hooks/Part1UseMemo";
+import Part1UseReducer from "./components/Hooks/Part1UseReducer";
+import Part2UseReducer from "./components/Hooks/Part2UseReducer";
 //understanding states and properties
 export default function App() {
   return (
@@ -34,6 +38,13 @@ export default function App() {
       <Part2UseCallBack/>
       <br/>
       <Part3UseCallBack/>
+      <br/>
+      <Part1UseMemo/>
+      <br/>
+      <Part1UseReducer/>
+      <br/>
+      <Part2UseReducer/>
+      <br/>
     </>
   );
 }
