@@ -1,13 +1,14 @@
-import PropsDemo from "./components/Part1Props";
-import Part1UseState from "./components/Part1UseState";
-import Part2UseState from "./components/Part2UseState";
-import Part3UseState from "./components/Part3UseState";
-import Part1UseEffect from "./components/Part1UseEffect";
-import Part2UseEffect from "./components/Part2UseEffect";
-import Part1UseRef from "./components/Part1UseRef";
-import Part2UseRef from "./components/Part2UseRef";
-import {Parent0,Parent1} from "./components/Part1UseCallBack";
-import Part2UseCallBack from "./components/Part2UseCallBack";
+import PropsDemo from "./components/Props/Part1Props";
+import Part1UseState from "./components/Hooks/Part1UseState";
+import Part2UseState from "./components/Hooks/Part2UseState";
+import Part3UseState from "./components/Hooks/Part3UseState";
+import Part1UseEffect from "./components/Hooks/Part1UseEffect";
+import Part2UseEffect from "./components/Hooks/Part2UseEffect";
+import Part1UseRef from "./components/Hooks/Part1UseRef";
+import Part2UseRef from "./components/Hooks/Part2UseRef";
+import {Parent0,Parent1} from "./components/Hooks/Part1UseCallBack";
+import Part2UseCallBack from "./components/Hooks/Part2UseCallBack";
+import Part3UseCallBack from "./components/Hooks/Part3UseCallBack";
 //understanding states and properties
 export default function App() {
   return (
@@ -31,6 +32,8 @@ export default function App() {
       <Parent1/>
       <br/>
       <Part2UseCallBack/>
+      <br/>
+      <Part3UseCallBack/>
     </>
   );
 }

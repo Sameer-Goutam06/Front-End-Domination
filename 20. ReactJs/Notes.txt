@@ -1,0 +1,3 @@
+Part1 - basic creation of react components 
+Part2- Hooks, Props, Composition, React.memo(in useCallBack), Render Props, Refs, Events
+Part3- Routing
